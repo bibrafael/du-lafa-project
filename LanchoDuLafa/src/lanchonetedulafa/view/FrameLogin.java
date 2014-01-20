@@ -24,7 +24,6 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.plaf.metal.MetalLookAndFeel;
-import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
 import lanchonetedulafa.controller.UsuarioAction;
 
@@ -107,6 +106,7 @@ public class FrameLogin extends JFrame {
 						pfSenha.setText(null);
 					}
 				} catch (Exception ex) {
+					ex.printStackTrace();
 				}
 			}
 		});
